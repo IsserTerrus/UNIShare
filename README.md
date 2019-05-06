@@ -4,7 +4,7 @@ UniShare est un service de partage URL sur les réseaux sociaux et Réponse via 
 
 I Tried to explain to you with a draw :
 
-![UniShare_Explain.jpg](https://git.teddybeard.eu/FOKUZA/UniShare/raw/branch/master/_DOC/UniShare_Explain.jpg)
+![UniShare_Explain.jpg](https://raw.githubusercontent.com/IsserTerrus/UNIShare/master/_DOC/UniShare_Explain.jpg)
 
 ## Langage : PHP/JS
 ## Inspired about [ShareToMastodon](https://sharetomastodon.github.io/about/)
