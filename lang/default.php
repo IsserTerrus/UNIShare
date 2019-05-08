@@ -5,6 +5,8 @@ $UNISHARE_LNG["Site_Footer"] = "UNISHARE 0.1";
 
 //Alerts
 $UNISHARE_LNG["ALERT_No_Title"] = "Share a Memorie !";
+$UNISHARE_LNG["Text_Area"] = "Required text";
+$UNISHARE_LNG["Feedback"] = "Please enter a message in the textarea.";
 
 //Mastodon Part
 $UNISHARE_LNG["Share_To_Mastodon"] = "Share to Mastodon";

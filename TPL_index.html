@@ -38,8 +38,11 @@
             <div class="col-md-12">
                 <h3 class="mt-2">%ALERT_No_Title%</h3>
                 <h4>%URL%</h4>
-                <div class="form-group">
-                        <textarea class="form-control" name="" id="SharingTextControl" rows="3"></textarea>
+                <div class="form-group was-validated">
+                    <textarea class="form-control is-invalid" name="" id="SharingTextControl" rows="3" placeholder="%Text_Area%" required></textarea>
+                    <div class="invalid-feedback">
+                        %Feedback%
+                    </div>
                 </div>
             </div>
         </div>    
