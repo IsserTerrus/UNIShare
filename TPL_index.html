@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="./js/bootstrap.js"></script>
     <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/unishare.js"></script>
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="./css/fork-awesome-1.1.7/css/fork-awesome.css">
@@ -38,10 +39,10 @@
     <div class="container bg-white border border-primary rounded-lg mt-5 p-5">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="mt-2">%ALERT_No_Title%</h3>
-                <h5>%URL%</h5>
+                <h3 class="mt-2">%VAR_TEXT%</h3>
+                <h5>%VAR_URL%</h5>
                 <div class="form-label-group was-validated">
-                    <textarea class="form-control is-invalid" name="" id="SharingTextControl" rows="3" placeholder="%Text_Area%" required></textarea>
+                    <textarea class="form-control is-invalid" name="" id="SharingTextControl" rows="3" placeholder="%Text_Area%" required>%VAR_TEXT%</textarea>
                     <div class="invalid-feedback">
                         %Feedback%
                     </div>
@@ -50,14 +51,14 @@
         </div>    
         <div class="row mt-2">
             <div class="col-md-6">
-                <h3>Partager sur Réseaux Centralisés</h3>
+                <h3></h3>
                 <form>
                     <div class="container row mb-2">
                         <div class="col-lg-6 col-md-12 col-sm-12 mt-2">
-                            <a name="shareToFb" id="shareToFb" class="btn btn-primary" href="#" role="button"><i class="fa fa-facebook-f "></i> %Share_To_FB%</a>
+                            <a name="shareToFb" id="shareToFb" class="btn btn-primary" onclick="GAFAM_Share_FB(UNISHARE_Val('SharingTextControl'),'%VAR_URL%')" href="#" role="button"><i class="fa fa-facebook-f "></i> %Share_To_FB%</a>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 mt-2">
-                            <a name="shareToTw" id="shareToTw" class="btn btn-primary" href="#" role="button"><i class="fa fa-twitter"></i> %Share_To_TW%</a>
+                            <a name="shareToTw" id="shareToTw" class="btn btn-primary" href="#" onclick="GAFAM_Share_TW(UNISHARE_Val('SharingTextControl'),'%VAR_URL%')" role="button"><i class="fa fa-twitter"></i> %Share_To_TW%</a>
                         </div>
                     </div>
                 </form>
@@ -66,7 +67,7 @@
                 <h3>Agir sur le Fediverse</h3>
                 <form>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="you@instance.ext" value="" />
+                        <input type="text" class="form-control" placeholder="you@instance.ext" value="" id="InstanceUser" />
                     </div>
                     <div class="container">
                         <div class="form-group row">
@@ -74,10 +75,12 @@
                                 <a name="commentToMasto" id="commentToMasto" class="btn btn-danger" href="#" role="button"><i class="fa fa-mastodon" aria-hidden="true"></i> %Comment_With_Mastodon%</a>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
-                                <a name="shareToMasto" id="shareToMasto" class="btn btn-light" href="#" role="button"><i class="fa fa-mastodon-alt" aria-hidden="true"></i> %Share_To_Mastodon%</a>
+                                <a name="shareToMasto" id="shareToMasto" class="btn btn-light" href="#" onclick="FEDI_Share_Masto(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button">
+                                    <i class="fa fa-mastodon-alt" aria-hidden="true"></i> %Share_To_Mastodon%
+                                </a>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
-                                <a name="shareToDiasp" id="shareToDiasp" class="btn btn-light" href="#" role="button"><i class="fa fa-diaspora" aria-hidden="true"></i> %Share_To_Diaspora%</a>
+                                <a name="shareToDiasp" id="shareToDiasp" class="btn btn-light" href="#" onclick="FEDI_Share_Diaspora(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-diaspora" aria-hidden="true"></i> %Share_To_Diaspora%</a>
                             </div>
                         </div>
                     </div>

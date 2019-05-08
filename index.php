@@ -15,9 +15,9 @@ if(file_exists("./lang/{$lang}.php"))
 
 //VARS
 $HTMLPage = "";
-$VAR_URL = "";
-$VAR_TEXT = "";
-$VAR_TITLE = $UNISHARE_LNG["ALERT_No_Title"];
+$UNISHARE_LNG['VAR_URL'] = "";
+$UNISHARE_LNG['VAR_TEXT'] = "";
+$UNISHARE_LNG['VAR_TITLE'] = $UNISHARE_LNG["ALERT_No_Title"];
 
 // Basic Instinct
 if(!file_exists("./TPL_index.html"))
@@ -29,17 +29,20 @@ else
 
 if(isset($_GET['url']))
 {
-   $VAR_URL =  $_GET['url'];
+    $UNISHARE_LNG['VAR_URL'] =  $_GET['url'];
 }
 
 if(isset($_GET['text']))
 {
-    $VAR_TEXT = $_GET['text'];
+    $UNISHARE_LNG['VAR_TEXT'] = $_GET['text'];
 }
 
 if(isset($_GET['title']))
 {
-    $VAR_TITLE = $_GET['title'];
+    $UNISHARE_LNG['VAR_TITLE'] = $_GET['title'];
+}
+else{
+    $UNISHARE_LNG['VAR_TEXT'] = $_GET['text'];
 }
 
 // TRANSLATE !

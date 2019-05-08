@@ -7,6 +7,8 @@ $UNISHARE_LNG["Site_Footer"] = "UNISHARE 0.1";
 $UNISHARE_LNG["ALERT_No_Title"] = "Partage quelque chose qui te tient à c&oelig;ur !";
 $UNISHARE_LNG["Text_Area"] = "Texte requis";
 $UNISHARE_LNG["Feedback"] = "Veuillez écrire quelque chose dans la zone de texte.";
+$UNISHARE_LNG["SHARE_TITLE_GAFAM"] = "Partager sur Réseaux Centralisés";
+$UNISHARE_LNG["SHARE_TITLE_FEDIVERSE"] = "Agir dans le Fediverse";
 
 //Mastodon
 $UNISHARE_LNG["Share_To_Mastodon"] = "Partage sur Mastodon";
