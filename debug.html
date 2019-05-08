@@ -10,7 +10,8 @@
 <body>
     <div align="center">
         <textarea name="ShareText" id="ShareText" cols="30" rows="10"></textarea>
-        <input id="ShareURL" type="text" class="form-control" placeholder="you@instance.ext" value="" />
+        <input id="ShareURL" type="text" class="form-control" placeholder="URL Distant" value="" />
+        <input id="Instance" type="text" class="form-control" placeholder="you@instance.ext" value="isserterrus@sociala.me" />
     </div>
     <div align="center">
         <a href="#" onclick="GAFAM_Share_FB(UNISHARE_Val('ShareText'),UNISHARE_Val('ShareURL'))">Share FaceBook</a>
@@ -18,6 +19,13 @@
     
     <div align="center">
         <a href="#" onclick="GAFAM_Share_TW(UNISHARE_Val('ShareText'),UNISHARE_Val('ShareURL'))">Share Twitt</a>
+    </div>
+    <div align="center">
+        <h4>FEDIVERSE !</h4>
+        <p><a href="#" onclick="FEDI_Share_Masto(UNISHARE_Val('ShareText'),UNISHARE_Val('ShareURL'),UNISHARE_Val('Instance'))">Share Masto</a></p>
+        <p><a href="#" onclick="FEDI_Share_Diaspora(UNISHARE_Val('ShareText'),UNISHARE_Val('ShareURL'),UNISHARE_Val('Instance'))">Share Disapora</a></p>
+        <h4>FEDIVERSE INTERACT !</h4>
+        <p><a href="#" onclick="FEDI_Comment_Masto(UNISHARE_Val('ShareURL'),UNISHARE_Val('Instance'))">Bah Oui T'es Con ICI ON COMMENTE</a></p>
     </div>
 </body>
 </html>
