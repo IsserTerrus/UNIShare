@@ -5,7 +5,7 @@ $UNISHARE_LNG["Site_Footer"] = "UNISHARE 0.1";
 
 //Alertes
 $UNISHARE_LNG["ALERT_No_Title"] = "Partage quelque chose qui te tient à c&oelig;ur !";
-$UNISHARE_LNG["Text_Area"] = "Text requis";
+$UNISHARE_LNG["Text_Area"] = "Texte requis";
 $UNISHARE_LNG["Feedback"] = "Veuillez écrire quelque chose dans la zone de texte.";
 
 //Mastodon
