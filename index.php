@@ -42,7 +42,10 @@ if(isset($_GET['title']))
     $UNISHARE_LNG['VAR_TITLE'] = $_GET['title'];
 }
 else{
-    $UNISHARE_LNG['VAR_TEXT'] = $_GET['text'];
+    if(isset($_GET['text']))
+{
+    $UNISHARE_LNG['VAR_TITLE'] = $_GET['text'];
+}
 }
 
 // TRANSLATE !
