@@ -31,6 +31,16 @@ if(isset($_GET['url']))
 {
     $UNISHARE_LNG['VAR_URL'] =  $_GET['url'];
 }
+else
+{
+    $UNISHARE_LNG['VAR_URL'] = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : "";
+}
+
+if($UNISHARE_LNG['VAR_URL'] == "")
+{
+    //Valeur par défaut - Notre Site ! 
+    $UNISHARE_LNG['VAR_URL'] = $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST'];
+}
 
 if(isset($_GET['text']))
 {

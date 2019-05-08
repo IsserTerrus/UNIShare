@@ -42,7 +42,7 @@
                 <h3 class="mt-2">%VAR_TITLE%</h3>
                 <h5>%VAR_URL%</h5>
                 <div class="form-label-group was-validated">
-                    <textarea class="form-control is-invalid" name="" id="SharingTextControl" rows="3" placeholder="%Text_Area%" required>%VAR_TEXT%</textarea>
+                    <textarea class="form-control is-invalid" name="" id="SharingTextControl" rows="3" placeholder="%Text_Area%">%VAR_TEXT%</textarea>
                     <div class="invalid-feedback">
                         %Feedback%
                     </div>
@@ -72,7 +72,7 @@
                     <div class="container">
                         <div class="form-group row">
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
-                                <a name="commentToMasto" id="commentToMasto" class="btn btn-danger" href="#" role="button"><i class="fa fa-mastodon" aria-hidden="true"></i> %Comment_With_Mastodon%</a>
+                                <a name="commentToMasto" id="commentToMasto" class="btn btn-danger" href="#" onclick="FEDI_Comment_Masto('%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-mastodon" aria-hidden="true"></i> %Comment_With_Mastodon%</a>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
                                 <a name="shareToMasto" id="shareToMasto" class="btn btn-light" href="#" onclick="FEDI_Share_Masto(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button">
