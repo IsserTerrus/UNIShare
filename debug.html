@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UNISHARE DEBUG</title>
+    <script src="./js/unishare.js"></script>
+</head>
+<body>
+    <div align="center">
+        <textarea name="ShareText" id="ShareText" cols="30" rows="10"></textarea>
+        <input id="ShareURL" type="text" class="form-control" placeholder="you@instance.ext" value="" />
+    </div>
+    <div align="center">
+        <a href="#" onclick="GAFAM_Share_FB(UNISHARE_Val('ShareText'),UNISHARE_Val('ShareURL'))">Share FaceBook</a>
+    </div>
+    
+    <div align="center">
+        <a href="#" onclick="GAFAM_Share_TW(UNISHARE_Val('ShareText'),UNISHARE_Val('ShareURL'))">Share Twitt</a>
+    </div>
+</body>
+</html>
