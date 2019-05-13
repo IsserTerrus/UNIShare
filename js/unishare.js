@@ -98,6 +98,6 @@ function readCookie(nom) {
 function afficherCookie() {
     var user = readCookie('yourInstance');
     if (user != "") {
-      document.getElementById('InstanceUser') = user;
+      document.getElementById('InstanceUser').value = user;
     }
   } 
