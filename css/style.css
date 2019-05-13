@@ -20,19 +20,20 @@
 }
 
 .mamot-alt{
+    color: #fff;
+    background-color:#9baec8;
+    border-color: #9baec8;
+}
+
+.mamot-alt:hover{
     color: #2b90d9;
     background-color:#282c37;
     border-color: #2b90d9;
 }
 
-.mamot-alt:hover{
-    color: #fff;
-    background-color: #2b90d9;
-}
-
 .diasp{
-    color: #bfbfbf;
-    background-color: #181818;
+    color: #181818;
+    background-color: #bfbfbf;
 }
 
 .diasp:hover{
