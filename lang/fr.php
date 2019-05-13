@@ -2,6 +2,7 @@
 // UNISHARE en FR
 $UNISHARE_LNG["Site_Title"] = "UNISHARE";
 $UNISHARE_LNG["Site_Footer"] = "UNISHARE 0.1";
+$UNISHARE_LNG["Site_Footer_About"] = "UNISHARE 0.1 - à propos";
 
 //Alertes
 $UNISHARE_LNG["ALERT_No_Title"] = "Partage quelque chose qui te tient à c&oelig;ur !";
