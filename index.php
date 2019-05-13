@@ -13,6 +13,13 @@ $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 if(file_exists("./lang/{$lang}.php"))
     include("./lang/{$lang}.php");
 
+if (isset($_GET['lng'])){
+    $lang = $_GET['lng'];
+    if(file_exists("./lang/{$lang}.php")){
+        include("./lang/{$lang}.php");
+    };
+};
+
 //VARS
 $HTMLPage = "";
 $UNISHARE_LNG['VAR_URL'] = "";
