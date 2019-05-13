@@ -1,4 +1,41 @@
+.fb{
+    color: #fff;
+    background-color: #3c5a99;
+}
+
+.tw{
+    color: #fff;
+    background-color: #1da1f2;
+}
+
 .mamot{
     color: #fff;
     background-color:#2b90d9;
-};
+}
+
+.mamot:hover{
+    color: #2b90d9;
+    background-color:#282c37;
+    border-color: #2b90d9;
+}
+
+.mamot-alt{
+    color: #2b90d9;
+    background-color:#282c37;
+    border-color: #2b90d9;
+}
+
+.mamot-alt:hover{
+    color: #fff;
+    background-color: #2b90d9;
+}
+
+.diasp{
+    color: #bfbfbf;
+    background-color: #181818;
+}
+
+.diasp:hover{
+    color: #fff;
+    background-color: #555;
+}

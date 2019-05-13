@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
 
     <!-- Feuille de style css -->
-    <link rel="stylsheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/bootstrap.js"></script>
     <script src="./js/jquery-3.4.1.js"></script>
@@ -57,10 +57,10 @@
                 <form>
                     <div class="container row mb-2">
                         <div class="col-lg-6 col-md-12 col-sm-12 mt-2">
-                            <a name="shareToFb" id="shareToFb" class="btn btn-primary" onclick="GAFAM_Share_FB(UNISHARE_Val('SharingTextControl'),'%VAR_URL%')" href="#" role="button"><i class="fa fa-facebook-f "></i> %Share_To_FB%</a>
+                            <a name="shareToFb" id="shareToFb" class="btn fb" onclick="GAFAM_Share_FB(UNISHARE_Val('SharingTextControl'),'%VAR_URL%')" href="#" role="button"><i class="fa fa-facebook-f "></i> %Share_To_FB%</a>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 mt-2">
-                            <a name="shareToTw" id="shareToTw" class="btn btn-primary" href="#" onclick="GAFAM_Share_TW(UNISHARE_Val('SharingTextControl'),'%VAR_URL%')" role="button"><i class="fa fa-twitter"></i> %Share_To_TW%</a>
+                            <a name="shareToTw" id="shareToTw" class="btn tw" href="#" onclick="GAFAM_Share_TW(UNISHARE_Val('SharingTextControl'),'%VAR_URL%')" role="button"><i class="fa fa-twitter"></i> %Share_To_TW%</a>
                         </div>
                     </div>
                 </form>
@@ -74,7 +74,7 @@
                     <div class="container">
                         <div class="form-group row">
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
-                                <a name="commentToMasto" id="commentToMasto" class="btn btn-danger" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Comment_Masto('%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-mastodon" aria-hidden="true"></i> %Comment_With_Mastodon%</a>
+                                <a name="commentToMasto" id="commentToMasto" class="btn mamot-alt" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Comment_Masto('%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-mastodon" aria-hidden="true"></i> %Comment_With_Mastodon%</a>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
                                 <a name="shareToMasto" id="shareToMasto" class="btn mamot" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Share_Masto(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button">
@@ -82,7 +82,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
-                                <a name="shareToDiasp" id="shareToDiasp" class="btn btn-light" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Share_Diaspora(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-diaspora" aria-hidden="true"></i> %Share_To_Diaspora%</a>
+                                <a name="shareToDiasp" id="shareToDiasp" class="btn diasp" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Share_Diaspora(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-diaspora" aria-hidden="true"></i> %Share_To_Diaspora%</a>
                             </div>
                         </div>
                     </div>
