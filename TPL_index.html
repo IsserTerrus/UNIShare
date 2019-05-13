@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- Feuille de style css -->
+    <link rel="stylsheet" href="./css/style.css">
+
     <script src="./js/bootstrap.js"></script>
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/unishare.js"></script>
@@ -75,12 +77,12 @@
                                 <a name="commentToMasto" id="commentToMasto" class="btn btn-danger" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Comment_Masto('%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-mastodon" aria-hidden="true"></i> %Comment_With_Mastodon%</a>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
-                                <a name="shareToMasto" id="shareToMasto" class="btn btn-light" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Share_Masto(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button">
+                                <a name="shareToMasto" id="shareToMasto" class="btn mamot" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Share_Masto(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button">
                                     <i class="fa fa-mastodon-alt" aria-hidden="true"></i> %Share_To_Mastodon%
                                 </a>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
-                                <a name="shareToDiasp" id="shareToDiasp" class="btn btn-light" href="#" onclick="FEDI_Share_Diaspora(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-diaspora" aria-hidden="true"></i> %Share_To_Diaspora%</a>
+                                <a name="shareToDiasp" id="shareToDiasp" class="btn btn-light" href="#" onclick="createCookie('yourInstance', UNISHARE_Val('InstanceUser'), 30);FEDI_Share_Diaspora(UNISHARE_Val('SharingTextControl'),'%VAR_URL%',UNISHARE_Val('InstanceUser'))" role="button"><i class="fa fa-diaspora" aria-hidden="true"></i> %Share_To_Diaspora%</a>
                             </div>
                         </div>
                     </div>

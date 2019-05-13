@@ -79,25 +79,3 @@ function createCookie(nom, valeur, jours) {
     }
     document.cookie = nom + "=" + encodeURIComponent(valeur) + ';' + expires + "; path=/";
 };
-
-function readCookie(nom) {
-    var nomE = nom + "=";
-    var cookies = document.cookie.split(';');
-    for (var i=0 ; i<cookies.length ; i++) {
-        var cookie = cookies[i];
-        while (cookie.charAt(0)==' ') {
-            cookie = cookie.substring(1,cookie.length);
-        }
-        if (cookie.indexOf(nomE)==0) {
-            return cookie.substring(nomE.length,cookie.length);
-        }
-    }
-    return "";
-};
-
-function afficherCookie() {
-    var user = readCookie('yourInstance');
-    if (user != "") {
-      document.getElementById('InstanceUser').value = user;
-    }
-};

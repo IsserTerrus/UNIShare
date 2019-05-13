@@ -19,8 +19,10 @@ $UNISHARE_LNG['VAR_URL'] = "";
 $UNISHARE_LNG['VAR_TEXT'] = "";
 $UNISHARE_LNG['VAR_TITLE'] = $UNISHARE_LNG["ALERT_No_Title"];
 
-
-$UNISHARE_LNG['VAR_InstanceUser'] = urldecode($_COOKIE["yourInstance"]);
+if(isset($_COOKIE["yourInstance"]))
+    $UNISHARE_LNG['VAR_InstanceUser'] = urldecode($_COOKIE["yourInstance"]);
+else
+    $UNISHARE_LNG['VAR_InstanceUser'] = "";
 
 
 
