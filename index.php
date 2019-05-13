@@ -19,6 +19,11 @@ $UNISHARE_LNG['VAR_URL'] = "";
 $UNISHARE_LNG['VAR_TEXT'] = "";
 $UNISHARE_LNG['VAR_TITLE'] = $UNISHARE_LNG["ALERT_No_Title"];
 
+
+$UNISHARE_LNG['VAR_InstanceUser'] = urldecode($_COOKIE["yourInstance"]);
+
+
+
 // Basic Instinct
 if(!file_exists("./TPL_index.html"))
     die("Error - Model Page Doesn't Exist !");

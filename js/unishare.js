@@ -77,7 +77,7 @@ function createCookie(nom, valeur, jours) {
     }else {
         var expires = "";
     }
-    document.cookie = nom + "=" + valeur + ';' + expires + "; path=/";
+    document.cookie = nom + "=" + encodeURIComponent(valeur) + ';' + expires + "; path=/";
 };
 
 function readCookie(nom) {
