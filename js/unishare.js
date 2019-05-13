@@ -5,7 +5,7 @@ function UNISHARE_Val(elemid){
 };
 function UNISHAIRE_ExtractInstance(userinstancelabel){
     var InstanceRes = "";
-
+    
     if(userinstancelabel == "" || userinstancelabel == null)
     {
         return  InstanceRes;
@@ -41,8 +41,8 @@ function FEDI_Share_Masto(SHR_Text, SHR_URL, SHR_Instance){
     URLDist += "?text="+encodeURIComponent(SHR_Text);
     URLDist += "&url="+encodeURIComponent(SHR_URL);
     if(SHR_Instance != "" && SHR_Instance != null){
-        window.location.href =  URLDist; 
-     }
+        window.location.href =  URLDist;
+    }
     return false;
 
 };
@@ -52,8 +52,8 @@ function FEDI_Share_Diaspora(SHR_Text, SHR_URL, SHR_Instance){
     URLDist += "?title="+encodeURIComponent(SHR_Text);
     URLDist += "&url="+encodeURIComponent(SHR_URL);
     if(SHR_Instance != "" && SHR_Instance != null){
-        window.location.href =  URLDist; 
-     }
+        window.location.href =  URLDist;
+    }
     return false;
 };
 
@@ -61,9 +61,43 @@ function FEDI_Comment_Masto(SHR_URL, SHR_Instance){
     var URLDist = UNISHAIRE_ExtractInstance(SHR_Instance)+"/authorize_interaction";
     URLDist += "?uri="+encodeURIComponent(SHR_URL);
     if(SHR_Instance != "" && SHR_Instance != null && SHR_URL != "" && SHR_Instance!=null){
-       window.location.href =  URLDist; 
+        window.location.href =  URLDist;
     }
-    
+
     return false;
 
 };
+
+
+function createCookie(nom, valeur, jours) {
+    if (jours) {
+        var date = new Date();
+        date.setTime(date.getTime() + (jours*24*60*60*1000));
+        var expires = "; expires=" + date.toUTCString();
+    }else {
+        var expires = "";
+    }
+    document.cookie = nom + "=" + valeur + ';' + expires + "; path=/";
+};
+
+function readCookie(nom) {
+    var nomE = nom + "=";
+    var cookies = document.cookie.split(';');
+    for (var i=0 ; i<cookies.length ; i++) {
+        var cookie = cookies[i]
+        while (cookie.charAt(0)==' ') {
+            cookie = cookie.substring(1,cookie.length);
+        }
+        if (cookie.indexOf(nomE)==0) {
+            return cookie.substring(nomE.length,cookie.length);
+        }
+    }
+    return "";
+}
+
+function afficherCookie() {
+    var user = readCookie('yourInstance');
+    if (user != "") {
+      document.getElementById('InstanceUser') = user;
+    }
+  } 
