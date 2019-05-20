@@ -24,7 +24,7 @@
   <body class="bg-light">
     <!------ Include the above in your HEAD tag ---------->
 
-    <header class="container-fluid bg-dark text-white pt-2">
+    <header class="container-fluid bg-dark text-white pt-2 pb-2">
         <div class="row">
             <div class="col-2">
                 <!-- Logo -->
@@ -32,7 +32,7 @@
                 <img src="">
             </div>
             <div class="col-auto">
-                <h1>UniShare</h1>
+                <a href="index.php" class="text-decoration-none link h1">UniShare</a>
             </div>
         </div>
     </header>
@@ -92,8 +92,15 @@
     </div>
 
     <footer class="container-fluid fixed-bottom bg-secondary text-white pb-2">
-        <div class="text-center">
-            &copy; %Site_Footer%
+        <div class="container">
+            <div class="text-center">
+                <div class="d-inline">
+                    &copy; %Site_Footer% -
+                </div>
+                <div class="d-inline">
+                    <a href="about.php" class="text-decoration-none link">%About%</a>
+                </div>
+            </div>
         </div>
     </footer>
   </body>

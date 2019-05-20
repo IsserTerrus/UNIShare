@@ -2,7 +2,7 @@
 // Default lang to UNISHARE - EN
 $UNISHARE_LNG["Site_Title"] = "UNISHARE";
 $UNISHARE_LNG["Site_Footer"] = "UNISHARE 0.1";
-$UNISHARE_LNG["Site_Footer_About"] = "UNISHARE 0.1 - about";
+$UNISHARE_LNG["About"] = "about";
 
 //Alerts
 $UNISHARE_LNG["ALERT_No_Title"] = "Share a Memorie !";
